@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_signup1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="239dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:visibility="gone">
+
+            <!--  Email Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <EditText android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:maxLength="50"
+                    android:hint="Email" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  First Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <EditText android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+                    android:maxLength="30"
+                    android:hint="First Name"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Last Name Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <EditText android:id="@+id/input_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/black"
+                    android:maxLength="30"
+                    android:hint="Last Name"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" >
+
+                <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_back1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:background="@drawable/curve_button"
+                        android:padding="5dp"
+                        android:layout_marginRight="20dp"
+                        android:text="back"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_next1"
+                        android:layout_toEndOf="@id/btn_back1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:background="@drawable/curve_button"
+                        android:padding="5dp"
+                        android:text="next"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_signup2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="300dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:visibility="gone">
+
+            <!--  Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <EditText android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:maxLength="15"
+                    android:hint="Password" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Confirm Password Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <EditText android:id="@+id/input_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"
+                    android:maxLength="15"
+                    android:hint="Confirm Password"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" >
+
+                <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_back2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:background="@drawable/curve_button"
+                        android:padding="5dp"
+                        android:layout_marginRight="20dp"
+                        android:text="back"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_next2"
+                        android:layout_toEndOf="@id/btn_back2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:background="@drawable/curve_button"
+                        android:padding="5dp"
+                        android:text="next"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_signup3"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="300dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:visibility="gone">
+
+            <!--  Phone Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <EditText android:id="@+id/input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:maxLength="20"
+                    android:hint="Phone Number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Plate Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <EditText android:id="@+id/input_plate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapCharacters"
+                    android:textColor="@color/black"
+                    android:maxLength="20"
+                    android:hint="Plate Number"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp" >
+
+                <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_back3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:background="@drawable/curve_button"
+                        android:padding="5dp"
+                        android:layout_marginRight="20dp"
+                        android:text="back"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_signup"
+                        android:layout_toEndOf="@id/btn_back3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:background="@drawable/curve_button"
+                        android:padding="5dp"
+                        android:text="sign up"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

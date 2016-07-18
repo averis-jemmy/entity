@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/grp_blank" />
+    <group android:id="@+id/grp_menu" android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_one"
+            android:checked="true"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_one"
+            android:title="Account" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_one"
+            android:title="Messages" />
+        <item
+            android:id="@+id/nav_campaign"
+            android:icon="@drawable/ic_one"
+            android:title="Campaign" />
+    </group>
+
+    <group android:id="@+id/grp_logout" android:checkableBehavior="all">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_one"
+            android:title="Logout" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_one"
+            android:title="About" />
+    </group>
+
+    <group android:id="@+id/grp_exit">
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_one"
+            android:title="Exit" />
+    </group>
+</menu>

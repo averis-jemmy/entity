@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="200dp"
+    android:layout_height="wrap_content" android:gravity="center"
+    android:background="@color/background" >
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="Bluetooth Search" />
+
+    <EditText
+        android:id="@+id/txt_access_password"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:text="" />
+
+    <RelativeLayout
+        android:paddingBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_access_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:background="@drawable/curve_button"
+            android:padding="5dp"
+            android:text="continue"/>
+    </RelativeLayout>
+
+</LinearLayout>

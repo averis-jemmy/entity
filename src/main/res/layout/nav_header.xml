@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <id.zenmorf.com.mapsapps.CustomControl.RoundedImageView
+            android:id="@+id/image_profile_header"
+            android:layout_margin="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_icon" />
+
+        <TextView
+            android:id="@+id/tv_name_header"
+            android:layout_toRightOf="@id/image_profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Budiyanto Harliwong" />
+
+        <TextView
+            android:id="@+id/tv_title_header"
+            android:layout_toRightOf="@id/image_profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="12dp"
+            android:textColor="@color/iron"
+            android:text="Super Star" />
+
+        <TextView
+            android:id="@+id/tv_income_header"
+            android:layout_toRightOf="@id/image_profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="Rp 2.450.000" />
+
+        <TextView
+            android:layout_toRightOf="@id/image_profile_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textSize="12dp"
+            android:textColor="@color/iron"
+            android:text="total earning" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/base" />
+    </LinearLayout>
+
+</RelativeLayout>

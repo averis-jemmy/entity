@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:gravity="center"
+    android:background="@color/background" >
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="Logout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/aluminum"
+        android:textAlignment="center"
+        android:text="Are you sure?" />
+
+    <RelativeLayout
+        android:padding="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_logout_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/curve_button"
+            android:padding="5dp"
+            android:text="no"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_logout_yes"
+            android:layout_toEndOf="@id/btn_logout_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:background="@drawable/curve_button"
+            android:padding="5dp"
+            android:text="yes"/>
+    </RelativeLayout>
+
+</LinearLayout>

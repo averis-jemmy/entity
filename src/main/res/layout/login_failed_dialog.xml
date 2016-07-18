@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:gravity="center"
+    android:background="@color/background" >
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:text="Login unsuccesful" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/aluminum"
+        android:textAlignment="center"
+        android:text="You have entered" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/aluminum"
+        android:textAlignment="center"
+        android:text="invalid login information" />
+
+    <RelativeLayout
+        android:padding="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/link_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/button"
+            android:paddingRight="20dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="forgot password?"
+            android:gravity="center"
+            android:textSize="16dip"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_try_again"
+            android:layout_toEndOf="@id/link_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:background="@drawable/curve_button"
+            android:padding="5dp"
+            android:text="try again"/>
+    </RelativeLayout>
+
+</LinearLayout>

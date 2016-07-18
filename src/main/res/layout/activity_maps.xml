@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="15dp"
+    android:keepScreenOn="true" >
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <TextView
+        android:id="@+id/lbl_latitude"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Latitude :"
+        android:layout_below="@id/map"/>
+
+    <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="0.0"
+        android:layout_toRightOf="@id/lbl_latitude"
+        android:layout_below="@id/map"/>
+
+    <TextView
+        android:id="@+id/lbl_longitude"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Longitude :"
+        android:layout_below="@id/lbl_latitude"/>
+
+    <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="0.0"
+        android:layout_toRightOf="@id/lbl_longitude"
+        android:layout_below="@id/lbl_latitude"/>
+
+    <TextView
+        android:id="@+id/lbl_accuracy"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Accuracy :"
+        android:layout_below="@id/lbl_longitude"/>
+
+    <TextView
+        android:id="@+id/tv_accuracy"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="0 M"
+        android:layout_toRightOf="@id/lbl_accuracy"
+        android:layout_below="@id/lbl_longitude"/>
+
+    <TextView
+        android:id="@+id/lbl_distance"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Status :"
+        android:layout_below="@id/lbl_accuracy"/>
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Not Active"
+        android:layout_toRightOf="@id/lbl_distance"
+        android:layout_below="@id/lbl_accuracy"/>
+
+    <TextView
+        android:id="@+id/lbl_bluetooth"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Bluetooth :"
+        android:layout_below="@id/lbl_distance"/>
+
+    <TextView
+        android:id="@+id/tv_bluetooth"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Not Found"
+        android:layout_toRightOf="@id/lbl_bluetooth"
+        android:layout_below="@id/lbl_distance"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_stop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_bluetooth"
+        android:padding="12dp"
+        android:text="Stop"/>
+
+</RelativeLayout>
