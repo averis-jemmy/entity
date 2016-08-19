@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/prof_pic"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="2dip"
+        app:riv_border_color="#FFFFFF"
+        app:riv_mutate_background="true"
+        app:riv_oval="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".40">
+        <TextView
+            android:id="@+id/NameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="NAME" />
+        <TextView
+            android:id="@+id/PositionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POSITION" />
+        <TextView
+            android:id="@+id/StatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ViewImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/view"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true" />
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+    <include
+        layout="@layout/AppBar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".30"
+            android:scaleType="fitXY" />
+        <LinearLayout
+            android:id="@+id/layoutPhone"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".70"
+            android:paddingTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/Black"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="(+)" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_edit_text"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:maxLength="20"
+                    android:textSize="20dp"
+                    android:id="@+id/etPhoneNumber" />
+            </LinearLayout>
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:padding="10dp"
+                android:textSize="10dp"
+                android:text="SEND ME A VERIFICATION CODE"
+                android:id="@+id/btnSubmit" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layoutVerify"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".70"
+            android:visibility="gone"
+            android:paddingTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_edit_text"
+                android:inputType="number"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:maxLength="6"
+                android:id="@+id/etVerificationCode" />
+            <Button
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:text="VERIFY"
+                android:id="@+id/btnVerify" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/Black"
+                    android:text="Didn't get the code?" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/Hyperlink"
+                    android:text="Resend verification code"
+                    android:id="@+id/tvResend" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

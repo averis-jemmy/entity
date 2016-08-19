@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Click Me!</string>
+	<string name="app_name">MyAveris</string>
+  <string name="open_drawer">Open</string>
+  <string name="close_drawer">Close</string>
+
+  <string name="Empty"></string>
+  <string name="MyAveris">MyAveris</string>
+  <string name="ApplicationForm">Application Form</string>
+  <string name="ApplicationList">Application List</string>
+  <string name="PersonalInfo">Personal Information</string>
+</resources>
